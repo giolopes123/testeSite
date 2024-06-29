@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sobre Nós | FISIKANDO</title>
+	<!--<link rel="stylesheet" href="css.css">-->
+	  <!-- Favicons -->
+	<link href="assets/img/logo_tab_fi.png" rel="icon">
+	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/fonts/Warung Kopi.otf" rel="stylesheet">
+	<link href="assets/fonts/Better Together Demo.ttf" rel="stylesheet">
+	<link href="assets/fonts/ScheinSans-GOygD.ttf" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+
+<style type="text/css">
+	body{margin-top:20px;
+		background: #F6FFDE;
+	}
+
+	/* ===== ABOUT PAGE ===== */
+	.team-item {
+	  padding: 35px;
+	  padding-right: 0;
+	  position: relative;
+	  z-index: 0;
+	}
+
+	.team-item:after, .team-item:before {
+	  content: "";
+	  position: absolute;
+	  -webkit-box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+	          box-shadow: 0 5px 30px 0 rgba(39, 39, 39, 0.15);
+	  border-radius: 10px;
+	  z-index: -1;
+	}
+
+	.team-item:before {
+	  height: 100%;
+	  background-color: #fff;
+	  left: 0;
+	  top: 0;
+	  right: 30px;
+	  -webkit-transition: all 0.3s ease;
+	  transition: all 0.3s ease;
+	}
+
+	.team-item:after {
+	  height: 6px;
+	  width: calc(100% - 30px);
+	  background-color: #86A789;
+	  left: 0;
+	  bottom: 0;
+	  -webkit-transition: all 0.3s linear;
+	  transition: all 0.3s linear;
+	}
+
+	.team-item:hover:after {
+	  height: 100%;
+	}
+
+	.team-item .img-holder {
+	  -ms-flex-negative: 0;
+	      flex-shrink: 0;
+	  -webkit-box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.2);
+	          box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.2);
+	  border-radius: 10px;
+	  width: calc(100% - 70px);
+	  margin-left: 70px;
+	  overflow: hidden;
+	}
+
+	.team-item .img-holder img {
+	  border-radius: 10px;
+	  width: 100%;
+	  -webkit-transform: scale(1.1);
+	          transform: scale(1.1);
+	  -webkit-transition: all 0.6s ease;
+	  transition: all 0.6s ease;
+	}
+
+	.team-item:hover .img-holder img {
+	  -webkit-transform: scale(1);
+	          transform: scale(1);
+	}
+
+	.team-item .socials {
+	  position: absolute;
+	}
+
+	.team-item .socials a {
+	  display: block;
+	  margin-right: 0;
+	  margin-bottom: 15px;
+	  -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.12);
+	          box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.12);
+	}
+
+	.team-item .socials a:last-of-type {
+	  margin-bottom: 0;
+	}
+
+	.team-item .team-content {
+	  margin-right: 70px;
+	  text-align: center;
+	}
+
+	.team-item .team-content h5 {
+	  color: #101f41;
+	  -webkit-transition: all 0.4s ease;
+	  transition: all 0.4s ease;
+	  font-weight: 600;
+	}
+
+	.team-item .team-content p {
+	  color: #86A789;
+	  -webkit-transition: all 0.4s ease;
+	  transition: all 0.4s ease;
+	  font-weight: 600;
+	  font-size: 14px;
+	}
+
+	.team-item:hover .team-content h5, .team-item:hover .team-content p {
+	  color: #fff;
+	  -webkit-transition: all 0.3s ease;
+	  transition: all 0.3s ease;
+	  font-weight: 600;
+	}
+
+	.d-inline-block {
+	    display: inline-block!important;
+	}
+
+	.socials a {
+	    width: 35px;
+	    height: 35px;
+	    background-color: #8EC3B0;
+	    border-radius: 50%;
+	    -webkit-box-shadow: 0 3px 2px 0 #516cd9;
+	    box-shadow: 0 3px 2px 0 #516cd9;
+	    text-align: center;
+	    color: #fff;
+	    padding-top: 10px;
+	    font-size: 16px;
+	    margin-right: 10px;
+	    -webkit-transition: all 0.3s ease;
+	    transition: all 0.3s ease;
+	}
+
+	.mb-2, .my-2 {
+	    margin-bottom: .5rem!important;
+	}
+
+	h5 {
+	    font-size: 21px;
+	}
+
+	.mb-30 {
+	    margin-bottom: 30px;
+	}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha256-3sPp8BkKUE7QyPSl6VfBByBroQbKxKG7tsusY2mhbVY=" crossorigin="anonymous" />
+
+</head>
+<body>
+
+	<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+	<header id="header" class="d-flex flex-column justify-content-center">
+
+	    <nav id="navbar" class="navbar nav-menu">
+	      <ul>
+	        <li><a href="index.html" class="nav-link scrollto"><i class="bi bi-house"></i><span>Início</span></a></li>
+	        <li><a href="módulos.html" class="nav-link scrollto"><i class="bi bi-book"></i> <span>Módulos</span></a></li>
+	        <li><a href="resumos.html" class="nav-link scrollto"><i class="bi bi-body-text"></i><span>Resumos</span></a></li>
+	        <li><a href="exercícios - Copia.html" class="nav-link scrollto"> <i class="bi bi-list-ol"></i> <span>Listas de Exercícios</span></a></li>
+	        <li><a href="sobre.html" class="nav-link scrollto active"><i class="bi bi-info-circle"></i><span>Sobre</span></a></li>
+	      </ul>
+	    </nav><!-- .nav-menu -->
+
+	</header><!-- End Header -->
+
+	<div style="height: 100px; width: 100%; background-color: #AAC8A7; text-align: center !important; padding-top: 5vh; margin-top: -20px;">
+		<strong><span style="font-size: 6vh; font-family: Better Together Demo;  color: #ffff !important;">Conheça Nossa Equipe</span></strong>
+	</div>
+
+<div class="container">
+				<br>
+				<br>
+				<br>
+        <!--<div class="row">
+            <div class="col-12">
+                <div class="section-title title-left text-center text-lg-left">
+                    <h1 class="top-sep" style="font-family: Schein; margin-top: 50px; font-weight: 600;">Conheça Nossa Equipe</h1>
+                </div>
+            </div>
+        </div>-->
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                            <span class="socials d-inline-block">
+                                <a href="mailto:ana.chagas27@aluno.ce.gov.br" class="zmdi zmdi-email"></a>
+                                <a href="https://www.instagram.com/leticiacte/" class="zmdi zmdi-instagram"></a>
+                            </span>
+                        <span class="img-holder d-inline-block">
+                                <img src="assets/img/desenvolvedores/foto letícia.jpeg" alt="Foto da Letícia">
+                            </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Ana Letícia</h5>
+                        <p class="text-uppercase mb-0">Cientista</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                            <span class="socials d-inline-block">
+                                <a href="mailto:ediannymirna787@gmail.com" class="zmdi zmdi-email"></a>
+                                <a href="https://www.instagram.com/only_edianny67/" class="zmdi zmdi-instagram"></a>
+                            </span>
+                        <span class="img-holder d-inline-block">
+                                <img src="assets/img/desenvolvedores/foto edianne.jpeg" alt="Foto da Edianne">
+                            </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Edianne Mirna</h5>
+                        <p class="text-uppercase mb-0">Professora / Videomaker</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                            <span class="socials d-inline-block">
+                                <a href="mailto:edsondiegolop@gmail.com" class="zmdi zmdi-email"></a>
+                                <a href="https://www.instagram.com/iamdieguin_/" class="zmdi zmdi-instagram"></a>
+                            </span>
+                        <span class="img-holder d-inline-block">
+                                <img src="assets/img/desenvolvedores/foto diego.jpeg" alt="Foto do Diego">
+                            </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Edson Diego</h5>
+                        <p class="text-uppercase mb-0">Secretário</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                            <span class="socials d-inline-block">
+                                <a href="mailto:cadastros.gio23@gmail.com" class="zmdi zmdi-email"></a>
+                                <a href="https://www.instagram.com/gyovanaa_carneiroo/" class="zmdi zmdi-instagram"></a>
+                            </span>
+                        <span class="img-holder d-inline-block">
+                                <img src="assets/img/desenvolvedores/eu linda.jpeg" alt="Foto da Giovana">
+                            </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Giovana Carneiro</h5>
+                        <p class="text-uppercase mb-0">Desenvolvedora Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                            <span class="socials d-inline-block">
+                                <a href="#" class="zmdi zmdi-email"></a>
+                                <a href="https://www.instagram.com/ruthyhs_/" class="zmdi zmdi-instagram"></a>
+                            </span>
+                        <span class="img-holder d-inline-block">
+                                <img src="assets/img/desenvolvedores/foto ruthy.jpeg" alt="Foto da Ruthy">
+                            </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Ruthy Helly</h5>
+                        <p class="text-uppercase mb-0">Professora</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                            <span class="socials d-inline-block">
+                                <a href="mailto:uemileguimaraes4@gmail.com" class="zmdi zmdi-email"></a>
+                                <a href="https://www.instagram.com/uemileee/" class="zmdi zmdi-instagram"></a>
+                            </span>
+                        <span class="img-holder d-inline-block">
+                                <img src="assets/img/desenvolvedores/foto uemile.jpeg" alt="Foto da Uemile">
+                            </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Uemile Guimarães</h5>
+                        <p class="text-uppercase mb-0">Professora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
